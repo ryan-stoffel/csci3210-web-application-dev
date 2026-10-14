@@ -1,0 +1,3 @@
+[submodule "assignments/hw2"]
+	path = assignments/hw2
+	url = git@github.com:ryan-stoffel/csci3210-hw2.git
