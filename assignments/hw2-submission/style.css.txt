@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    margin: 24px 8px;
+}
+
+h1, .instructions, #game-status, #hint-status, #statistics {
+    text-align: center;
+}
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.letter-box {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.filled-box {
+    border: 2px solid black;
+}
+
+.letter-row {
+    display: flex;
+}
+
+#keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keyboard-cont div {
+    display: flex;
+}
+
+.second-row {
+    margin: 0.5rem 0;
+}
+
+.keyboard-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.65rem clamp(0.25rem, 1.4vw, 0.65rem);
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.keyboard-button:focus-visible {
+    outline: 3px solid #2458a6;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate__animated {
+        animation: none !important;
+    }
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.game-controls button, .game-controls select {
+    font: inherit;
+    padding: 6px 8px;
+}
+
+#statistics {
+    max-width: 600px;
+    margin: 16px auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+body[data-theme="food"] {
+    background-color: #fff4e5;
+    color: #583411;
+}
+
+body[data-theme="tech"] {
+    background-color: #eaf3ff;
+    color: #173c64;
+}
+
+body[data-theme="classic"] {
+    background-color: white;
+    color: #222;
+}
+
+button:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
