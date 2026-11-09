@@ -4,3 +4,6 @@
 [submodule "assignments/hw3"]
 	path = assignments/hw3
 	url = git@github.com:ryan-stoffel/csci3210-hw3.git
+[submodule "projects/midterm"]
+	path = projects/midterm
+	url = git@github.com:ryan-stoffel/csci3210-midterm.git
